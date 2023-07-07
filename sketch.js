@@ -92,6 +92,13 @@ function draw() {
         gameOver.visible = true
         restart.visible = true  
 
+    if(gameState === END){
+        gameOver.visible = true
+        restart.visible = True
+        plane.visible = false
+        obstacleGroup.visible = false
+    }
+
 
         if(mousePressedOver(restart)){
             reset()
